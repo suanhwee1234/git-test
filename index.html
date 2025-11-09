@@ -3,96 +3,123 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
-  <title>Frontend Mentor | QR code component</title>
+  <title>Frontend Mentor | Blog preview card</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-    body{
-      width:960px;
-      height:1440px;
-      background-color: hsl(212, 45%, 89%);
-      font-family: "Outfit", sans-serif;
-    }
     .container{
-      width:320px;
-      height:499px;
-      
-      background-color: hsl(0, 0%, 100%);
-      /* border-radius:15px;
-      box-shadow:0px 15px 20px rgba(0,0,0,0.2);
-      text-align:center;
-      margin:auto;
-      margin-top:200px;
+      width: 1440px;
+      height: 1024px;
+     
       font-family: 'Outfit', sans-serif;
-      padding:30px; */
-      border-radius: 20px;
+     
+      background-color: hsl(47, 88%, 63%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
-    .qrcode-img{
-      width:288px;
-      height:288px;
-      
-      margin-top:16px;
-      margin-left: 16px;
-      margin-right:16px;
-      border-radius:10px;
+    main{
+      background-color:hsl(0, 0%, 100%);
+      width: 384px;
+      height: 522px;
     }
-    .intro{
-      font-size:22px;
-      color:hsl(218, 44%, 22%);
-      /*text-align:center;
-      margin-top:25px;
-      margin-bottom:20px;
-      margin-left:20px;
-      padding:0 20px; */
-      font-weight:700;
-      margin-left:16px;
-      margin-right: 16px;
-      margin-bottom: 16px;
-      margin-top: 0px;
+    h1{
+      line-height: 150%;
+      letter-spacing: 0px;
+      font-weight: 800;
+      font-size: 14px;
+      padding: 12px 4px;
+      background-color: hsl(47, 88%, 63%);
+      width: 82px;
+      height: 29px;
+      text-align: center;
+      margin:0px;
     }
-    .text{
-      font-size:15px;
-      color:hsl(216, 15%, 48%);
-      /* text-align:center;
-      padding:0 30px; */
-      margin-left:16px;
-      margin-right: 16px;
-      margin-top: 0px;
-      text-align:center
+    body{
+      margin: 0;
+      padding: 0;
+       font-family: "Figtree", sans-serif;
     }
-    .art1{
-      margin-top:24px;
-      margin-bottom:40px;
-      margin-left:16px;
-      margin-right:16px;
-      width: 288px;
-      height: 131px;
-      
+    .pic1{
+    margin: 24px;
+    width: 336px;
+    height: 200px;
+    margin-bottom: 0px;
     }
+article{
+  margin: 12px 24px;
+  width: 336px;
+  height: 194px;
+  margin-bottom: 20px;
+}
+.pubdate{
+font-size: 14px;
+font-weight: 500;
+}
+.title{
+  font-size: 24px;
+  
+  line-height: 150%;
+  font-weight: 800;
+  margin-bottom: 0px;
+}
+.description{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: hsl(0, 0%, 42%);
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.avatar{
+  width: 32px;
+  height: 32px;
+}
+.author{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  /* justify-items: center; */
+  margin: 12px 24px;
+}
+.author p{
+  
+}
   </style>
+
 </head>
 <body>
-
   <div class="container">
-  <img src="./images/image-qr-code.png" alt="Eve" class="qrcode-img">
+  <main>
+    <img class="pic1" src="./assets/images/illustration-article.svg" alt="web3 image">
 
-  <div class="art1">
-  <h1 class="intro">Improve your front-end skills by building projects</h1>
+    <article>
+  <h1>Learning</h1>
 
-  <p class="text">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+  <p class="pubdate">Published 21 Dec 2023</p>
+
+  <p class="title">HTML & CSS foundations</p>
+
+  <p class="description">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+</article>
+  <div class="author">
+  <img class="avatar" src="./assets/images/image-avatar.webp" alt="">
+  <p>Greg Hooper</p>
   </div>
-  </div>
+  
+    
+  </main>
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">suan hwee</a>.
   </div> -->
+  </div>
 </body>
 </html>
